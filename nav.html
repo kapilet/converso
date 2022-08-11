@@ -1,0 +1,87 @@
+<!-- <div class="top-nav-bar">
+    <div class="container">
+        <div class="top-nav-bar-box d-flex align-items-center justify-content-between">
+            <ul class="info header-contact">
+                <li><i class="fas fa-phone"></i> (+00) 0000 0000</li>
+                <li><i class="fas fa-at"></i> <a href="mailto:mail@email.com">brokerstar@systemsdna.com</a></li>
+            </ul>
+            <ul class="icon-follow">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<div class="container">
+    <div class="box-content d-flex align-items-center justify-content-between">
+        <div class="logo">
+            <a href="index.html" class="logo-nav">
+                <img class="img-fluid" src="assets/images/logo/01_logo.png" alt="01 Logo">
+            </a>
+            <!-- <a href="" class="btn-1 signinBtn mob" data-toggle="modal" data-target="#signIn">Sign in</a> -->
+            <a href="" class="btn-1 getQuote btn-highlight mob">Get quote</a>
+            <a href="#open-nav-bar-menu" class="open-nav-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- <div class="header-contact">
+            <div><i class="fas fa-phone"></i> (+00) 0000 0000</div>
+            <div><i class="fas fa-at"></i> email@mail.com</div>
+        </div> -->
+        <div class="nav-bar-link mr-5" id="open-nav-bar-menu">
+            <ul class="level-1">
+                <!-- <li>
+                    <a href="index.html">Home</a>
+                </li> -->
+                <li><!--  class="has-menu" -->
+                    <a href="index.html" class="nav-link">Home</a>                    
+                </li>
+                <li class="has-menu">
+                    <a href="#" class="nav-link">Solutions</a>
+                    <div class="toggle-btn"></div>
+                        <ul class="level-2">
+                            <li class="has-menu">
+                                <a href="personalisation-studio.html">Personalisation Studio</a>
+                                <div class="toggle-btn"></div>
+                                <ul class="level-3">
+                                    <li><a href="personalisation-studio.html#profile-enrichment">Profile enrichment through conversation</a></li>
+                                    <li><a href="personalisation-studio.html#personas-segments">Personas and Segments</a></li>
+                                    <li><a href="personalisation-studio.html#signals-messaging">Signals and Messaging</a></li>
+                                    <li><a href="personalisation-studio.html#lead-nurturing">Lead Nurturing Automation</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-menu">
+                                <a href="customer-conversation.html">Customer Conversation Designer</a>
+                                <div class="toggle-btn"></div>
+                                <ul class="level-3">
+                                    <li><a href="customer-conversation.html#conversation-mapping">Conversation Mapping</a></li>
+                                    <li><a href="customer-conversation.html#conversational-onboarding">Conversational Onboarding</a></li>
+                                    <li><a href="customer-conversation.html#multichannel-sales">Multichannel Sales Conversation</a></li>
+                                    <li><a href="customer-conversation.html#algorithmic">Algorithmic Recommendation</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                <li><!--  class="has-menu" -->
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <a href="" class="btn-1 getQuote btn-highlight">Get quote</a>
+    </div>
+</div>
+
+<script>
+    // $(function() {
+    //     $('nav li a[href^="' + location.pathname.split("/")[3] + '"]').addClass('color-active').parent('li').siblings().children().removeClass('color-active');
+    // });
+    $(function() {
+        /* debugger */
+        $('nav li a[href^="' + location.href.split("/").pop() + '"]').addClass('color-active').parent('li').siblings().children().removeClass('color-active');
+        $('nav li li a[href^="' + location.href.split("/").pop() + '"]').closest('.has-menu').children('a').addClass('color-active').parent('li').siblings().children().removeClass('color-active');
+    });
+</script>
